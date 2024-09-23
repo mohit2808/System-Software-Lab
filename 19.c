@@ -16,7 +16,7 @@
 // }
 
 int main(){
-    unsigned long start_time = __rdtsc();
+    unsigned long start_time = __rdtsc(); // we can use clock(), cause the tsc in present in the processor instructions
 
     printf("PID : %d\n", getpid());
 
